@@ -1,0 +1,196 @@
+h4 {
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgreen;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+footer {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* shorthand for margin-left: auto; margin-right: auto; */
+}
+
+main {
+    flex: 1;
+    margin: 0 20px; /* shorthand for margin-left: 20px; margin-right: 20px; */
+}
+
+h3 {
+    text-align: center;
+}
+
+.profile-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+
+#foto_gue {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%; /* Adjust the max-width as needed */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+p {
+    text-align: center;
+    margin: 0 100px; /* shorthand for margin-left: 100px; margin-right: 100px; */
+}
+
+#python,
+#html_icon,
+#css_icon,
+#cpp_icon {
+    /* combined selectors for common properties */
+    width: 100px;
+}
+
+footer {
+    display: block;
+    background-color: green;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: green;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(0, 86, 0);
+}
+
+.navbar li {
+    float: left;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust this width as needed */
+    margin: 0 auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+#Projects h3 {
+    text-align: center;
+}
+
+/* Adjustments for images */
+.slide img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Next and previous buttons */
+.carousel-prev,
+.carousel-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    z-index: 1;
+    opacity: 1; /* Set initial opacity to 1 to make them always visible */
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+/* Hide carousel buttons initially */
+.carousel-prev,
+.carousel-next {
+    opacity: 0;
+}
+
+/* Show carousel buttons on hover */
+.carousel:hover .carousel-prev,
+.carousel:hover .carousel-next {
+    opacity: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.typing-text {
+    width: 100%; /* Adjust the width as needed */
+    text-align: center; /* Center the text horizontally */
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Your existing CSS */
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+
+#foto_gue {
+    display: block;
+    margin-bottom: 10px;
+    width: 225px;
+}
+
+.typing-text-container {
+    margin-left: 10px; /* Adjust as needed */
+}
